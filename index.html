@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oginga Bernard Sura• Job Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --primary: #6366f1;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+        }
+
+        .nav-link {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #6366f1;
+            transform: translateY(-1px);
+        }
+
+        .portfolio-card {
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .skill-pill {
+            transition: all 0.2s ease;
+        }
+        
+        .skill-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgb(99 102 241 / 0.1), 0 2px 4px -2px rgb(99 102 241 / 0.1);
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1e7ff 100%);
+        }
+
+        .accent {
+            color: #6366f1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 smooth-scroll">
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-2xl flex items-center justify-center">
+                        <span class="text-white font-bold text-2xl">OB</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-2xl tracking-tight">Oginga Bernard Sura</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#about" class="nav-link text-slate-600 hover:text-slate-900">About</a>
+                    <a href="#education" class="nav-link text-slate-600 hover:text-slate-900">Education</a>
+                    <a href="#skills" class="nav-link text-slate-600 hover:text-slate-900">Skills</a>
+                    <a href="#projects" class="nav-link text-slate-600 hover:text-slate-900">Projects</a>
+                    <a href="#contact" class="nav-link text-slate-600 hover:text-slate-900">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <!-- Download CV Button -->
+                    <a href="#" 
+                       class="hidden md:flex items-center gap-x-2 px-5 py-2.5 text-sm font-semibold bg-white border border-slate-300 hover:bg-slate-50 transition-colors rounded-3xl">
+                        <i class="fa-solid fa-download text-xs"></i>
+                        <span>Download CV</span>
+                    </a>
+                    
+                    <!-- Mobile Menu -->
+                    <button class="md:hidden w-10 h-10 flex items-center justify-center text-slate-600 hover:text-slate-900">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-20">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="md:col-span-7">
+                <div class="inline-flex items-center gap-x-2 bg-white border border-slate-200 shadow-sm px-4 py-1.5 rounded-3xl mb-6">
+                    <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-emerald-600">Open to opportunities • 2026</span>
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl leading-[1.05] tracking-tighter font-semibold heading-font">
+                    Hi, I'm <span class="accent">Oginga Bernard Sura</span>.
+                </h1>
+                
+                <p class="mt-6 max-w-lg text-xl text-slate-600">
+                    A  Student who completed coursework towards diploma in Information  Communication and Technology,passionate about technology, design,marketting and building things that matter.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="#projects" 
+                       class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 transition-all text-white font-semibold rounded-3xl flex items-center justify-center gap-x-3 shadow-lg shadow-indigo-500/30">
+                        View My Work
+                    </a>
+                    <a href="#contact" 
+                       class="px-8 py-4 border border-slate-300 hover:bg-white transition-all font-semibold rounded-3xl flex items-center justify-center gap-x-3">
+                        Get in Touch
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-x-8 mt-10">
+                    <div>
+                        <div class="text-xs uppercase tracking-widest text-slate-500">Currently</div>
+                        <div class="font-medium">Building cool stuff</div>
+                    </div>
+                    <div class="h-px w-8 bg-slate-300"></div>
+                    <div class="flex -space-x-2">
+                        <!-- Fake avatars -->
+                        <div class="w-8 h-8 bg-slate-300 rounded-full border-2 border-white overflow-hidden"><img src="https://picsum.photos/id/1005/32/32" class="w-full h-full object-cover"></div>
+                        <div class="w-8 h-8 bg-slate-300 rounded-full border-2 border-white overflow-hidden"><img src="https://picsum.photos/id/1011/32/32" class="w-full h-full object-cover"></div>
+                        <div class="w-8 h-8 bg-slate-300 rounded-full border-2 border-white overflow-hidden"><img src="https://picsum.photos/id/1009/32/32" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Photo -->
+            <div class="md:col-span-5 flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="w-72 h-72 md:w-80 md:h-80 rounded-[3.5rem] overflow-hidden border-[12px] border-white shadow-2xl">
+                        <!-- CHANGE THIS: Replace with your photo -->
+                        <img src="assets/WhatsApp Image 2026-06-21 at 18.31.15.jpeg" 
+                             alt="bernard's profile photo" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-4 -right-4 bg-white px-5 py-3 rounded-3xl shadow-xl border border-slate-100 flex items-center gap-x-3">
+                        <div>
+                            <div class="text-emerald-600 text-xs font-bold tracking-wider">AVAILABLE FOR</div>
+                            <div class="font-semibold text-sm">Internships 2026</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-200">
+        <div class="max-w-3xl">
+            <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-600 mb-3">ABOUT ME</div>
+            <h2 class="section-title">Building the future,<br>one project at a time.</h2>
+            
+            <div class="mt-8 text-[17px] leading-relaxed text-slate-600 space-y-6">
+                <!-- CHANGE THIS: Write your own about me -->
+                <p>I'm a curious and driven personel with a strong passion for technology, design, and problem-solving. I love turning ideas into real, functional projects — whether it's building websites, creating digital tools, or exploring how technology can solve everyday problems.</p>
+                <p>Outside of coding and design,I am a digital markter inthusiast.I believe great work comes from curiosity, collaboration, and continuous learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="max-w-7xl mx-auto px-6 py-16 bg-white border-t border-slate-200">
+        <div class="max-w-3xl mb-10">
+            <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-600 mb-3">EDUCATION</div>
+            <h2 class="section-title">Learning journey.</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Education Card 1 -->
+            <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-semibold text-xl">Bondo Technical Training Institute</div>
+                    </div>
+                    <div class="text-right text-sm">
+                        <div class="font-medium text-emerald-600">2023-2026</div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="mt-6 text-sm text-slate-600">
+                    Relevant coursework: Information Technology, Digital Design, Mobile Development,Web Development & Design, Entrepreneurship
+                </div>
+            </div>
+
+            <!-- Education Card 2 -->
+            <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-semibold text-xl">Huawei Hackerthone Certification</div>
+                        <div class="text-slate-500">Innovation + Problem solving Techniques</div>
+                    </div>
+                    <div class="text-right text-sm">
+                        <div class="font-medium text-emerald-600">2025</div>
+                    </div>
+                </div>
+                <div class="mt-6 text-sm text-slate-600">
+                    Completed professional certificate programs focused on user-centered design and data analysis.
+                </div>
+            </div>
+
+            <!-- Education Card 3 -->
+            <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-semibold text-xl">Sori Boys' High School</div>
+                        <div class="text-slate-500">Attained Kenya Certificate of Secondary Education </div>
+                    </div>
+                    <div class="text-right text-sm">
+                        <div class="font-medium text-emerald-600">2019-2022</div>
+                    </div>
+                </div>
+                <div class="mt-6 text-sm text-slate-600">
+                    Basic education at high school level.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="max-w-3xl mb-10">
+            <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-600 mb-3">SKILLS</div>
+            <h2 class="section-title">What I bring to the table.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Technical Skills -->
+            <div>
+                <div class="font-semibold mb-4 text-lg flex items-center gap-x-2">
+                    <i class="fa-solid fa-laptop-code text-indigo-600"></i> 
+                    <span>Technical Skills</span>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <!-- CHANGE THESE SKILLS -->
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">HTML &amp; CSS</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">JavaScript</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Python</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">C</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">React JS</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Git &amp; GitHub</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Canva</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Adobe Photoshop</div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div>
+                <div class="font-semibold mb-4 text-lg flex items-center gap-x-2">
+                    <i class="fa-solid fa-users text-indigo-600"></i> 
+                    <span>Soft Skills</span>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Problem Solving</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Team Collaboration</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Communication</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Time Management</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Adaptability</div>
+                    <div class="skill-pill px-5 py-2 bg-white border border-slate-200 text-sm font-medium rounded-3xl">Creative Thinking</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-16 bg-white border-t border-slate-200">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-600 mb-3">FEATURED WORK</div>
+                <h2 class="section-title">Projects I'm proud of.</h2>
+            </div>
+            <a href="#" class="hidden md:flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-700">
+                See all projects <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Project 1 -->
+            <div class="portfolio-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
+                <img src="/assets/HelloDaktari.png" class="w-full h-48 object-cover" alt="Project 1">
+                <div class="p-7 flex-1 flex flex-col">
+                    <div>
+                        <div class="font-semibold text-xl">HelloDaktari</div>
+                        <div class="text-sm text-slate-500 mt-1">Personal Project • 2025</div>
+                    </div>
+                    <p class="mt-4 text-sm text-slate-600 flex-1">
+                        Built a system that helps in solving health related risk,preventing early & untimely deaths  ,the main aim and target are the button phone user with the remedy being the use of toll-free number which is acccsisble even in ares with low network connectivities. 
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">Python</span>
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">React JS</span>
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">Supabase</span>
+                    </div>
+                </div>
+                <div class="px-7 pb-7">
+                    <a href="#" class="text-sm font-semibold flex items-center gap-x-2 text-indigo-600 hover:text-indigo-700">
+                        View Project <i class="fa-solid fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
+                <img src="https://picsum.photos/id/160/600/340" class="w-full h-48 object-cover" alt="Project 2">
+                <div class="p-7 flex-1 flex flex-col">
+                    <div>
+                        <div class="font-semibold text-xl">EcoTrack School Initiative</div>
+                        <div class="text-sm text-slate-500 mt-1">School Club Project • 2024</div>
+                    </div>
+                    <p class="mt-4 text-sm text-slate-600 flex-1">
+                        Led a team to create a sustainability tracking dashboard for our school. Won 2nd place at the regional science fair.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">Python</span>
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">Data Analysis</span>
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">Figma</span>
+                    </div>
+                </div>
+                <div class="px-7 pb-7">
+                    <a href="#" class="text-sm font-semibold flex items-center gap-x-2 text-indigo-600 hover:text-indigo-700">
+                        View Case Study <i class="fa-solid fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="portfolio-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
+                <img src="https://picsum.photos/id/201/600/340" class="w-full h-48 object-cover" alt="Project 3">
+                <div class="p-7 flex-1 flex flex-col">
+                    <div>
+                        <div class="font-semibold text-xl">Portfolio Website v2</div>
+                        <div class="text-sm text-slate-500 mt-1">Personal • 2025</div>
+                    </div>
+                    <p class="mt-4 text-sm text-slate-600 flex-1">
+                        Designed and developed my own portfolio from scratch to showcase my work and improve my frontend skills.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">HTML</span>
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">CSS</span>
+                        <span class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl">JavaScript</span>
+                    </div>
+                </div>
+                <div class="px-7 pb-7">
+                    <a href="#" class="text-sm font-semibold flex items-center gap-x-2 text-indigo-600 hover:text-indigo-700">
+                        View Live Site <i class="fa-solid fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="max-w-2xl mx-auto text-center">
+            <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-600 mb-3">LET'S CONNECT</div>
+            <h2 class="section-title">Ready to work together?</h2>
+            <p class="mt-4 text-lg text-slate-600">I'm currently looking for internship opportunities and exciting projects for summer 2026.</p>
+            
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:alex.rivera@email.com" 
+                   class="flex-1 sm:flex-none px-8 py-4 bg-indigo-600 hover:bg-indigo-700 transition-colors text-white font-semibold rounded-3xl flex items-center justify-center gap-x-3">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Send me an email</span>
+                </a>
+                
+                <a href="#" 
+                   class="flex-1 sm:flex-none px-8 py-4 border border-slate-300 hover:bg-white transition-colors font-semibold rounded-3xl flex items-center justify-center gap-x-3">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            
+            <div class="mt-8 text-sm text-slate-500">
+                Or find me on 
+                <a href="#" class="font-medium text-slate-700 hover:text-indigo-600">GitHub</a> 
+                • 
+                <a href="#" class="font-medium text-slate-700 hover:text-indigo-600">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm text-slate-500">
+            © 2026 Oginga Bernard Sura. Built with passion and curiosity.
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script (already loaded via CDN)
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#6366f1');
+        }
+        
+        // Simple mobile menu (can be expanded later)
+        console.log('%c[Portfolio] Job portfolio template loaded successfully. Replace placeholders with your info!', 'color:#64748b');
+        
+        initializeTailwind();
+    </script>
+</body>
+</html>
